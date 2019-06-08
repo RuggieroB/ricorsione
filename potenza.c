@@ -20,12 +20,6 @@
 
 #include <stdio.h>
 
-#include <stdlib.h>
-
-#include <math.h>
-
-int abs(int e);
-
 int potenza(int b,int e);
 
 int calcolo_potenza(int b,int e);
