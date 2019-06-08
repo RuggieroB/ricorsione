@@ -21,3 +21,7 @@
 		- Programma "reverse.c":
 			Linguaggio "C":
 						Programma che stampa le cifre di un numero al contrario.
+						
+		- Programma "potenza.c":
+			Linguaggio "C":
+						Programma che calcola la potenza intera positiva di un numero intero.

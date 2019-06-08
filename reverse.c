@@ -1,21 +1,21 @@
 /*
 
-# ricorsione
+	# ricorsione
 
-# Programmi di Laboratorio di Programmazione in Linguaggio "C" e Linguaggio "Python" ("PY"). Alunno: Bucchianico Enrico Ruggiero, 4^Finf.
+	# Programmi di Laboratorio di Programmazione in Linguaggio "C" e Linguaggio "Python" ("PY"). Alunno: Bucchianico Enrico Ruggiero, 4^Finf.
 
 
-	ricorsione
+		ricorsione
 
-	Programmi di Laboratorio di Programmazione in Linguaggio "C" e Linguaggio "Python" ("PY"). Alunno: Bucchianico Enrico Ruggiero, 4^Finf.
-	
-	
+		Programmi di Laboratorio di Programmazione in Linguaggio "C" e Linguaggio "Python" ("PY"). Alunno: Bucchianico Enrico Ruggiero, 4^Finf.
+		
+		
 
-	
-		- Programma "reverse.c":
-			Linguaggio "C":
-						Programma che stampa le cifre di un numero al contrario.
-						
+		
+			- Programma "reverse.c":
+				Linguaggio "C":
+							Programma che stampa le cifre di un numero al contrario.
+							
 */
 
 #include <stdio.h>
