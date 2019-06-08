@@ -20,7 +20,15 @@
 
 #include <stdio.h>
 
+#include <stdlib.h>
+
+#include <math.h>
+
+int abs(int e);
+
 int potenza(int b,int e);
+
+int calcolo_potenza(int b,int e);
 
 int main()
 {
@@ -35,24 +43,7 @@ int main()
 	puts("\nInserire l'esponente:\t");
 	scanf("%d",&e);
 	
-	if(b==0)
-	{
-	
-		printf("\n\n%d ^ %d =\tIMPOSSIBILE!",b,e);
-	
-	}
-	else if(e==0)
-	{
-	
-		printf("\n\n%d ^ %d =\t1",b,e);
-
-	}
-	else
-	{
-	
-		printf("\n\n%d ^ %d  =\t%d",b,e,potenza(b,e));
-		
-	}
+	potenza(b,e);
 
 	puts("\n\n");
 	
@@ -63,17 +54,61 @@ int main()
 int potenza(int b,int e)
 {
 
+	if(b==0)
+	{
+	
+		return (printf("\n\n%d ^ %d =\t0",b,e));
+	
+	}
+	else if(e==0)
+	{
+	
+		return (printf("\n\n%d ^ %d =\t1",b,e));
+
+	}
+	else if(e==1)
+	{
+	
+		return (printf("\n\n%d ^ %d  =\t%d",b,e,calcolo_potenza(b,e)));
+		
+	}
+	else if(e<0)
+	{
+	
+		return (printf("\n\n%d ^ %d = 1/(%d)^%d = 1/%d",b,e,b,abs(e),calcolo_potenza(b,e)));
+
+	}
+	else
+	{
+	
+		return (printf("\n\n%d ^ %d  =\t%d",b,e,calcolo_potenza(b,e)));
+		
+	}
+	
+}
+
+int calcolo_potenza(int b,int e)
+{
+
 	if(e==1)
 	{
 	
 		return (b);
 		
 	}
+	if(e<0)
+	{
+	
+		e=abs(e);
+	
+		return (b*calcolo_potenza(b,e-1));
+	
+	}
 	else
 	{
 	
-		return (b*potenza(b,e-1));
+		return (b*calcolo_potenza(b,e-1));
 		
 	}
 	
-}							
+}						
