@@ -17,3 +17,7 @@
 		- Programma "somma.c":
 			Linguaggio "C":
 						Programma che, mediante una funzione ricorsiva di somme per 1, somma due interi non negativi.
+						
+		- Programma "reverse.c":
+			Linguaggio "C":
+						Programma che stampa le cifre di un numero al contrario.

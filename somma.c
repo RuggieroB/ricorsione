@@ -37,31 +37,25 @@ int main()
 		puts("1° Numero:\t");
 		scanf("%d",&n1);
 		
+		puts("\n2° Numero:\t");
+		scanf("%d",&n2);
+		
 		if(n1<=0)
 		{
 		
-			puts("\nERRORE!!! IL NUMERO DEVE ESSERE POSITIVO!\n");
+			puts("\nERRORE!!! IL 1° NUMERO DEVE ESSERE POSITIVO!\n");
 			
 		}	/* NO 'else' FOR THIS 'if' */
-		
-	}
-	while(n1<=0);
-	
-	do
-	{
-	
-		puts("\n2° Numero:\t");
-		scanf("%d",&n2);
 		
 		if(n2<=0)
 		{
 		
-			puts("\nERRORE!!! IL NUMERO DEVE ESSERE MAGGIORE O UGUALE DI \"0\"!");
+			puts("\nERRORE!!! IL 2° NUMERO DEVE ESSERE MAGGIORE O UGUALE A \"0\"!\n");
 			
 		}	/* NO 'else' FOR THIS 'if' */
-		
+	
 	}
-	while(n2<0);
+	while(n1<=0||n2<0);
 	
 	printf("\n\nLa somma tra i due valori e':\t%d",somma(n1,n2));
 
