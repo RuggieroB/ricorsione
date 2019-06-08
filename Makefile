@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-Wall -ansi -pedantic
-LDLIBS= -lm
+LDLIBS=
 
 .PHONY: clean
 clean:

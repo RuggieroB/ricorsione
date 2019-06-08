@@ -75,7 +75,7 @@ int potenza(int b,int e)
 	else if(e<0)
 	{
 	
-		return (printf("\n\n%d ^ %d = 1/(%d)^%d = 1/%d",b,e,b,abs(e),calcolo_potenza(b,e)));
+		return (printf("\n\n%d ^ %d = 1/(%d)^%d = 1/%d",b,e,b,-e,calcolo_potenza(b,e)));
 
 	}
 	else
@@ -99,7 +99,7 @@ int calcolo_potenza(int b,int e)
 	if(e<0)
 	{
 	
-		e=abs(e);
+		e=-e;
 	
 		return (b*calcolo_potenza(b,e-1));
 	
