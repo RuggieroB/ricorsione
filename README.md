@@ -25,3 +25,7 @@
 		- Programma "potenza.c":
 			Linguaggio "C":
 						Programma che calcola la potenza intera positiva di un numero intero.
+						
+		- Directory "hanoi":
+			- Programma "hanoi.c": 
+						Risoluzione di una Torre di Hanoi a n dischi.
