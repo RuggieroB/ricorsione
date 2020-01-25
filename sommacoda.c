@@ -8,25 +8,27 @@
 		ricorsione
 
 		Programmi di Laboratorio di Programmazione in Linguaggio "C" e Linguaggio "Python" ("PY"). Alunno: Bucchianico Enrico Ruggiero.
-		
-		
+	
+	
 
-		
-			- Programma "somma.c":
+	
+			- Programma "sommacoda.c":
 				Linguaggio "C":
-							Programma che, mediante una funzione ricorsiva di somme per 1, somma due interi non negativi.
-							
+							Riscrittura del programma "somma.c" con ricorsione in coda.
+
 */
 
 #include <stdio.h>
 
-int somma(int n1,int n2);
+int somma_helper(int n1, int n2, int parziale);
+
+int somma(int n1, int n2);
 
 int main()
 {
 
 	int n1,n2;
-
+	
 	puts("SOMMA TRA 2 INTERI NON NEGATIVI\n\n");
 	
 	puts("\nInserire 2 numeri interi positivi:\n");
@@ -63,24 +65,26 @@ int main()
 	}
 	while(n2<0);
 	
-	printf("\n\nLa somma tra i due valori e':\t%d",somma(n1,n2));
-
+	printf("\n\nLa somma aritmetica dei 2 numeri e':\t%d",somma(n1,n2));
+	
 	puts("\n\n");
 	
 	return 0;
 	
 }
 
-int somma(int n1,int n2)
+int somma_helper(int n1, int n2, int parziale)
 {
 
-	if(n2==0)
-	{
+	if(n2==0)	return n1+parziale;
 	
-		return n1;
-		
-	}
+	return somma_helper(n1,n2-1,parziale+1);
 
-	return (1+somma(n1,n2-1));
+}
 
-}						
+int somma(int n1, int n2)
+{
+
+	return somma_helper(n1,n2,0);
+
+}
