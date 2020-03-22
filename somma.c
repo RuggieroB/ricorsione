@@ -31,21 +31,8 @@ int main()
 	
 	puts("\nInserire 2 numeri interi positivi:\n");
 	
-	do
-	{
-	
-		puts("\n1° Numero:\t");
-		scanf("%d",&n1);
-		
-		if(n1<=0)
-		{
-		
-			puts("\nERRORE!!! IL NUMERO DEVE ESSERE POSITIVO E MAGGIORE DI \"0\"!\n");
-			
-		}	/* NO 'else' FOR THIS 'if' */
-		
-	}
-	while(n1<=0);
+	puts("\n1° Numero:\t");
+	scanf("%d",&n1);
 		
 	do
 	{
